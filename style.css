@@ -2,6 +2,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    transition:0.3s ease-in-out;
 }
 ul{
     list-style:none;
@@ -48,20 +49,27 @@ section{
     gap:5px;
 }
 .option :where(span,label){
-    color:#00a4b9;
+    color:#006977;
     cursor:pointer;
     padding:10px;
 }
+.option i{
+    filter: hue-rotate(180deg) contrast(0) brightness(1) invert(1);
+
+}
 .option:is(:hover,.active) i{
-    filter:hue-rotate(60deg) 
+    filter: hue-rotate(267deg) contrast(1) brightness(1) invert(0);
 }
 .option:is(:hover,.active) :where(span,label){
-
+    color:#01d8f5;
 }
 .option #fill-color{
     height:1rem;
     width:1rem;
     cursor:pointer;
+}
+#fill-color{
+    
 }
 .drawing-board{
     flex:1;
