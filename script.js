@@ -25,6 +25,12 @@ const drawCircle=(e)=>{
     ctx.arc(mousePosX,mousePosY,radius,0,2*Math.PI)
     !fillColor.checked ?  ctx.stroke(): ctx.fill();
 }
+const drawTriangle=(e)=>{
+    ctx.beginPath();
+    ctx.moveTo(mousePosX,prevMouseY);
+    ctx.lineTo(e.offsetX,e.offsetY);
+    ctx.stroke()
+}
 const draw = (e) => {
     if(!isDrawing) return;
     ctx.putImageData(snapshot,0,0)
@@ -37,7 +43,8 @@ const draw = (e) => {
             drawRect(e)
             break;
         case "triangle":
-            
+            drawTriangle()
+            break;
         case "circle":
             drawCircle(e)
             break;
@@ -66,7 +73,7 @@ toolBtns.forEach(btn=>{
 })
 colorPicker.forEach(color=>{
     color.addEventListener("click",()=>{
-        document.querySelector(".row.colors .option").classList.remove('selected');
+        document.querySelector(".row.colors .option.selected").classList.remove('selected');
         color.classList.add('selected')
     })
 })
