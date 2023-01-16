@@ -17,6 +17,11 @@
         <div class="row">
           <h4 class="title">Shapes</h4>
           <ul class="options">
+            <li class="option tool" id="line">
+              <i class="fa fa-line">📏</i>
+              <!-- <i class="fa-regular fa-triangle"></i> -->
+              <span>Line</span>
+            </li>
             <li class="option tool" id="triangle">
               <i class="fa fa-triangle">🔺</i>
               <!-- <i class="fa-regular fa-triangle"></i> -->
@@ -31,7 +36,7 @@
               <!-- <i class="fa-solid fa-circle"></i> <span>circle</span> -->
             </li>
             <li class="option">
-              <input type="checkbox" id="fill-color">
+              <input type="checkbox" id="fill-color" />
               <label for="fill-color">Fill color</label>
             </li>
           </ul>
@@ -49,23 +54,19 @@
               <!-- <i class="fa-regular fa-eraser"></i> <span>Rectangle</span> -->
             </li>
             <li class="option">
-              <input type="range" value="2" id="size-slider">
+              <input type="range" min="1" max="30" value="2" id="size-slider" />
             </li>
           </ul>
         </div>
         <div class="row colors">
           <h4 class="title">Colors</h4>
           <ul class="options">
+            <li class="option selected"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
             <li class="option">
-            </li>
-            <li class="option">
-            </li>
-            <li class="option ">
-            </li>
-            <li class="option">
-            </li>
-            <li class="option">
-                <input type="color" value="#00a4b9" id="color-picker"/>
+              <input type="color" value="#00a4b9" id="color-picker" />
             </li>
           </ul>
         </div>
@@ -73,7 +74,6 @@
           <button class="clear-canvas">Clear canvas</button>
           <button class="save-image">Save as image</button>
         </div>
-        
       </section>
       <section class="drawing-board">
         <canvas></canvas>

@@ -97,18 +97,18 @@ section{
     border:1px solid 
 }
 .colors .option:nth-child(2){
-    background: #000;
+    background-color: #000;
 }
 .colors .option:nth-child(3){
-    background: red;
+    background-color: red;
 }
 .colors .option:nth-child(4){
-    background: green;
+    background-color: green;
 }
 .colors .option:nth-child(5){
-    background: blue;
+    background-color: blue;
 }
-.row.colors .option:first-child:hover:before{
+.row.colors .option:first-child:is(:hover,.selected)::before{
     border: 2px solid #555;
 }
 .row.colors .option:is(.selected,:hover)::before{
@@ -120,18 +120,9 @@ section{
     border:2px solid #fff;
     border-radius:50%;
 }
-.row.colors .option:last-child{
-    background: transparent;
-}
-.row.colors .option:last-child::before{
-    display: none;
-}
 .option #color-picker{
-    opacity: 1;
+    opacity: 0;
     cursor: pointer;
-    width: 30px;
-    height: 20px;
-    border-radius: 50%;
 }
 .buttons button{
     width: 100%;
