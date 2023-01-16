@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paint app</title>
+    <script
+      src="https://kit.fontawesome.com/5639eb3289.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="toolbox">
+        <div class="row">
+          <h4 class="title">Shapes</h4>
+          <ul class="options">
+            <li class="option">
+              <i class="fa fa-triangle">🔺</i>
+              <!-- <i class="fa-regular fa-triangle"></i> -->
+              <span>Triangle</span>
+            </li>
+            <li class="option">
+              <i class="fa fa-rectangle">🔳</i> <span>Rectangle</span>
+              <!-- <i class="fa-regular fa-rectangle"></i> <span>Rectangle</span> -->
+            </li>
+            <li class="option">
+              <i class="fa fa-circle">🔴</i> <span>circle</span>
+              <!-- <i class="fa-solid fa-circle"></i> <span>circle</span> -->
+            </li>
+            <li class="option">
+              <input type="checkbox" id="fill-color">
+              <label for="fill-color">Fill color</label>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <h4 class="title">Options</h4>
+          <ul class="options">
+            <li class="option">
+              <i class="fa fa-brush">🧹</i>
+              <!-- <i class="fa-regular fa-brush"></i> -->
+              <span>brush</span>
+            </li>
+            <li class="option">
+              <i class="fa fa-eraser">🧽</i> <span>Rectangle</span>
+              <!-- <i class="fa-regular fa-eraser"></i> <span>Rectangle</span> -->
+            </li>
+            <li class="option">
+              <input type="range" id="size-slider">
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <h4 class="title">Colors</h4>
+          <ul class="options">
+            <li class="option">
+            </li>
+            <li class="option">
+            </li>
+            <li class="option">
+            </li>
+            <li class="option">
+            </li>
+            <li class="option">
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <button class="clear-canvas">Clear canvas</button>
+          <button class="save-image">Save as image</button>
+        </div>
+        
+      </section>
+      <section class="drawing-board"></section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
